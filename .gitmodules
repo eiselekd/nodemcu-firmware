@@ -1,0 +1,12 @@
+[submodule "esp-open-sdk/crosstool-NG"]
+	path = esp-open-sdk/crosstool-NG
+	url = https://github.com/jcmvbkbc/crosstool-NG
+[submodule "esp-open-sdk/esp-open-lwip"]
+	path = esp-open-sdk/esp-open-lwip
+	url = https://github.com/pfalcon/esp-open-lwip
+[submodule "esp-open-sdk/esptool"]
+	path = esp-open-sdk/esptool
+	url = https://github.com/themadinventor/esptool
+[submodule "esp-open-sdk/lx106-hal"]
+	path = esp-open-sdk/lx106-hal
+	url = https://github.com/tommie/lx106-hal
