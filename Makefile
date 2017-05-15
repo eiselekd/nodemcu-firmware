@@ -106,7 +106,7 @@ ESPTOOL ?= ../tools/esptool.py
 CSRCS ?= $(wildcard *.c)
 ASRCs ?= $(wildcard *.s)
 ASRCS ?= $(wildcard *.S)
-SUBDIRS ?= $(patsubst %/,%,$(dir $(filter-out tools/Makefile,$(wildcard */Makefile))))
+SUBDIRS ?= $(patsubst %/,%,$(dir $(filter-out esp-open-sdk/Makefile,$(filter-out tools/Makefile,$(wildcard */Makefile)))))
 
 ODIR := .output
 OBJODIR := $(ODIR)/$(TARGET)/$(FLAVOR)/obj
