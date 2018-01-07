@@ -11,7 +11,7 @@ function cb_drained(d)
 
   file.seek("set", 0)
   -- uncomment the following line for continuous playback
-  --d:play(pcm.RATE_8K)
+  d:play(pcm.RATE_8K)
 end
 
 function cb_stopped(d)

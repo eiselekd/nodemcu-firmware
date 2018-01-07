@@ -338,6 +338,8 @@ $(foreach lib,$(GEN_LIBS),$(eval $(call MakeLibrary,$(basename $(lib)))))
 
 $(foreach image,$(GEN_IMAGES),$(eval $(call MakeImage,$(basename $(image)))))
 
+-include Makefile.pre.mk
+
 #############################################################
 # Recursion Magic - Don't touch this!!
 #
