@@ -9,5 +9,8 @@ toolchain:
 flash-test:
 	tools/esptool.py --port /dev/ttyUSB0 flash_id
 
-flash: 
-	tools/esptool.py --port /dev/ttyUSB0 write_flash -fm dio 0x00000 bin/nodemcu_integer_master_20180107-1347.bin
+flash-split: 
+	tools/esptool.py --port /dev/ttyUSB0 write_flash -fm dio -fs 32m -ff 40m 0x00000 bin/0x00000.bin 0x10000 bin/0x10000.bin
+
+flash-bin: 
+	tools/esptool.py --port /dev/ttyUSB0 write_flash -fm dio -fs 32m -ff 40m 0x00000 bin/nodemcu_integer_master_20180107-1347.bin
