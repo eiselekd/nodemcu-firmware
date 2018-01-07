@@ -13,4 +13,4 @@ flash-split:
 	tools/esptool.py --port /dev/ttyUSB0 write_flash -fm dio -fs 32m -ff 40m 0x00000 bin/0x00000.bin 0x10000 bin/0x10000.bin
 
 flash-bin: 
-	tools/esptool.py --port /dev/ttyUSB0 write_flash -fm dio -fs 32m -ff 40m 0x00000 bin/nodemcu_integer_master_20180107-1347.bin
+	tools/esptool.py --port /dev/ttyUSB0 write_flash -fm dio -fs 32m -ff 40m 0x00000 bin/nodemcu_integer_master_20180107-1529.bin
