@@ -1,0 +1,7 @@
+# flash with pcm:
+
+- make -f Makefile.pre.mk flash-pcm
+- files in spiffs : local/fs flash offset in bin/spiffs-32mb.dat (derived from size of bin/0x10000.bin)
+- enabled apps/include/user_modules.h
+  #define LUA_USE_MODULES_PCM
+  #define LUA_USE_MODULES_SIGMA_DELTA
